@@ -8,6 +8,7 @@ common styles
     body {
         font-family: 'Poppins', sans-serif;
         background-color: #F3F1FF;
+        margin: 0px;
     }
     
     main {
@@ -28,6 +29,67 @@ common styles
     hr {
         border: 1px solid #D1D1D1;
         margin-bottom: 27px;
+    }
+    /* -------------
+header styles 
+--------------*/
+    
+    .header {
+        background-color: #562EFF;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-bar {
+        display: flex;
+        width: 900px;
+        justify-content: space-between;
+    }
+    
+    .nav-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-icon {
+        margin-top: 10px;
+    }
+    
+    .nav-icon img {
+        width: 40.42px;
+    }
+    
+    .icon-name {
+        color: #FFFFFF;
+        margin-left: 10px;
+    }
+    
+    .icon-name p {
+        font-size: 24px;
+    }
+    
+    .nav-link {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-link ul {
+        display: flex;
+    }
+    
+    .nav-link ul li {
+        list-style: none;
+        margin-right: 36px;
+        color: #FFFFFF;
+    }
+    
+    .nav-link ul li:hover {
+        color: #000000;
+        cursor: pointer;
+    }
+    
+    .nav-profile {
+        margin-top: 10px;
     }
     /*-----------
 Top players style 
@@ -64,7 +126,6 @@ Top players style
     .player-name {
         margin-left: 16px;
         font-size: 18px;
-        /* font-weight: 500; */
     }
     /* ----------------
 top blog styles 
@@ -170,7 +231,17 @@ Media queries
     /* Mobile devices */
     
     @media only screen and (max-width: 688px) {
-        .container {
+        .nav-left {
+            margin-left: 10px;
+        }
+        .nav-link {
+            background-color: #562EFF;
+        }
+        .nav-link ul li {
+            margin-right: 10px;
+        }
+        .container,
+        .nav-bar {
             width: 100%;
         }
         .players {
@@ -200,6 +271,15 @@ Media queries
     /* tablet devices */
     
     @media only screen and (min-width:688px) and (max-width: 992px) {
+        .nav-left {
+            margin-left: 10px;
+        }
+        .nav-link ul li {
+            margin-right: 10px;
+        }
+        .nav-profile img {
+            margin-right: 45px;
+        }
         .container {
             width: 100%;
             text-align: center;
