@@ -178,6 +178,9 @@ Courses styles
     
     .course {
         width: 250px;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.05);
     }
     
     .course .course-banner img {
